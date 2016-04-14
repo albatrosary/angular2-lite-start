@@ -5,18 +5,21 @@ import {Component, Input, Output, Directive, EventEmitter} from 'angular2/core';
 @Component({
   selector: 'bank-account',
   template: `
-    <div>Bank Name: {{bankName}}</div>
+    <div>Bank Name: {{bankNumber+1}}</div>
     <div>Account Id: {{id}}</div>
     <div>normalizedBankName: {{normalizedBankName}}</div>
-  `
+  `,
+  inputs: ['bankNumber: bank-number']
 })
 
 class BankAccount {
-  @Input('bank-name') bankName: string;
+  // @Input('bank-number') bankNum: number;
   @Input('account-id') id: string;
   // this property is not bound, and won't be automatically updated by Angular
   normalizedBankName: string;
+  bankNumber: number;
   constructor() {
+    
     this.normalizedBankName = 'ほげ'
   }
 }
@@ -40,12 +43,13 @@ class IntervalDir {
 @Component({
   selector: 'my-app',
   template: `
-    <bank-account bank-name="RBC" account-id="4747"></bank-account>
+    <bank-account [bank-number]="12" account-id="4747"></bank-account>
     <interval-dir (everySecond)="everySecond()" (everyFiveSeconds)="everyFiveSeconds()"></interval-dir>
   `,
   directives: [BankAccount, IntervalDir]
 })
 class App {
+  @Input('app-id') id: string;
   everySecond() { console.log('second'); }
   everyFiveSeconds() { console.log('five seconds'); }
 }
