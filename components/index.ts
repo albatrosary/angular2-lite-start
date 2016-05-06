@@ -1,1 +1,1 @@
-export {HogeAppComponent} from './home/home';
+export {AppComponent} from './home/home';
