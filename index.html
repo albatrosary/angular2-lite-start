@@ -17,9 +17,11 @@
     
     <!-- 3. Configure SystemJS -->
     <script>
-    System.import('system-config.js').then(function () {
-      System.import('scripts/main');
-    }).catch(console.error.bind(console));
+    System.import('system-config.js')
+      .then(function () {
+        System.import('scripts/main');
+      })
+      .catch(console.error.bind(console));
     </script>
   </body>
 </html>
