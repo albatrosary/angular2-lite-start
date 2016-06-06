@@ -1,5 +1,8 @@
 {
   "port": 8000,
   "files": ["./**/*.{html,htm,css,js}"],
-  "server": { "baseDir": "./" }
+  "server": {
+    "baseDir": "./src/",
+    "routes": {"/node_modules": "node_modules"}
+  }
 }
