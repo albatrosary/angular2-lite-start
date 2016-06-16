@@ -1,11 +1,11 @@
 declare var System: any;
 
-// Apply the CLI SystemJS configuration.
+// apply the CLI SystemJS configuration.
 System.config({
   map: {
     '@angular': 'node_modules/@angular',
     'rxjs': 'node_modules/rxjs',
-    'scripts/main': 'scripts/main.js'
+    'scripts/main': 'scripts/main.js',
   },
   packages: {
     '@angular/core': { main: 'index' },
@@ -14,11 +14,11 @@ System.config({
     '@angular/platform-browser': { main: 'index' },
     '@angular/platform-browser-dynamic': { main: 'index' },
 
-    // Thirdparty barrels.
+    // thirdparty barrels.
     'rxjs': { main: 'Rx' },
 
-    // App specific barrels.
+    // app specific barrels.
     'components': { main: 'index' },
     'services': { main: 'index' },
-  }
+  },
 });
