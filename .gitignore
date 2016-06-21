@@ -3,3 +3,4 @@ typings
 typings.json
 *.js
 *.js.map
+*.log
