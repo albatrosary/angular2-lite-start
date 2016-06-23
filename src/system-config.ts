@@ -50,7 +50,5 @@ let config = {
   packages: packages
 };
 
-console.log(config);
-
 System.config(config);
 
