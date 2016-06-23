@@ -50,7 +50,7 @@
   },
   "jspm": {
     "name": "angular2-lite-start",
-    "main": "app/main.js",
+    "main": "angular2-lite-start.js",
     "directories": {
       "packages": "node_modules"
     },
