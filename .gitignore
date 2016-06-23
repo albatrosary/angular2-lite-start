@@ -1,6 +1,7 @@
 node_modules
 typings
 typings.json
+bin
 *.js
 *.js.map
 *.log
