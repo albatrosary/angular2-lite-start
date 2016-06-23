@@ -47,5 +47,20 @@
     "typescript": "^1.8.10",
     "typings": "^0.8.1",
     "watchify": "^3.7.0"
+  },
+  "jspm": {
+    "name": "angular2-lite-start",
+    "main": "app/main.js",
+    "directories": {
+      "packages": "node_modules"
+    },
+    "configFiles": {
+      "jspm": "bin/system-config.js",
+      "jspm:dev": "jspm.dev.js",
+      "jspm:browser": "jspm.browser.js",
+      "jspm:node": "jspm.node.js"
+    },
+    "dependencies": {},
+    "devDependencies": {}
   }
 }
