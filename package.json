@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server -c bs-config.json",
-    "postinstall": "typings install -AS es6-shim jasmine"
+    "postinstall": "typings install -AS core-js jasmine node"
   },
   "repository": {
     "type": "git",
