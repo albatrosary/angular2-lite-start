@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/albatrosary/angular2-lite-start#readme",
   "dependencies": {
-    "@angular/common": "2.0.0-rc.4",
-    "@angular/compiler": "2.0.0-rc.4",
-    "@angular/core": "2.0.0-rc.4",
-    "@angular/forms": "0.2.0",
-    "@angular/http": "2.0.0-rc.4",
-    "@angular/platform-browser": "2.0.0-rc.4",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router": "3.0.0-beta.2",
+    "@angular/common": "angular/common-builds",
+    "@angular/compiler": "angular/compiler-builds",
+    "@angular/core": "angular/core-builds",
+    "@angular/forms": "angular/forms-builds",
+    "@angular/http": "angular/http-builds",
+    "@angular/platform-browser": "angular/platform-browser-builds",
+    "@angular/platform-browser-dynamic": "angular/platform-browser-dynamic-builds",
+    "@angular/router": "angular/router-builds",
     "systemjs": "0.19.31",
     "core-js": "^2.4.0",
     "reflect-metadata": "^0.1.3",
@@ -45,20 +45,5 @@
     "typescript": "^1.8.10",
     "typings": "^0.8.1",
     "watchify": "^3.7.0"
-  },
-  "jspm": {
-    "name": "angular2-lite-start",
-    "main": "angular2-lite-start.js",
-    "directories": {
-      "packages": "node_modules"
-    },
-    "configFiles": {
-      "jspm": "bin/system-config.js",
-      "jspm:dev": "jspm.dev.js",
-      "jspm:browser": "jspm.browser.js",
-      "jspm:node": "jspm.node.js"
-    },
-    "dependencies": {},
-    "devDependencies": {}
   }
 }
