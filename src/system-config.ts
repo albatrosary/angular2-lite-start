@@ -28,8 +28,7 @@ let ngPackageNames = [
   'http',
   'platform-browser',
   'platform-browser-dynamic',
-  'router',
-  'router-deprecated'
+  'router'
 ];
 // Individual files (~300 requests):
 let packIndex = (pkgName) => {
