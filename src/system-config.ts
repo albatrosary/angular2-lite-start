@@ -11,14 +11,16 @@ let map = {
   'app':                        'app', // 'dist',
   'scripts/main':               'scripts/main.js',
   '@angular':                   'node_modules/@angular',
-  'rxjs':                       'node_modules/rxjs'
+  'rxjs':                       'node_modules/rxjs',
+  'traceur':                    'node_modules/traceur/bin/'
 };
 // packages tells the System loader how to load when no filename and/or no extension
 let packages = {
   'app':                        { main: 'script/main.js',  defaultExtension: 'js' },
   'rxjs':                       { defaultExtension: 'js' },
   'modules':                    { main: 'index', defaultExtension: 'js' },
-  'components':                 { main: 'index', defaultExtension: 'js' }
+  'components':                 { main: 'index', defaultExtension: 'js' },
+  'traceur':                    { main: 'traceur', defaultExtension: 'js' }
 };
 let ngPackageNames = [
   'common',
