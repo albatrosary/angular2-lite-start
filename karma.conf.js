@@ -52,7 +52,6 @@ module.exports = function(config) {
       // required for component assests fetched by Angular's compiler
       "/app/": "/base/built/app/"
     },
-
     reporters: ['progress'],
     port: 9876,
     colors: true,
