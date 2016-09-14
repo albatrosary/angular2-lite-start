@@ -1,3 +1,6 @@
+/// <reference path="../../../node_modules/@types/karma/index.d.ts" />
+/// <reference path="../../../node_modules/@types/jasmine/index.d.ts" />
+
 import { Component } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
