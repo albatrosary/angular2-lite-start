@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <base href="/">
-    <title>Document</title>
+    <title>Angular2 lite Start</title>
   </head>
   <body>
     <!-- 1. Display the application -->
     <my-app>Loading...</my-app>
     
     <!-- 2. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
     
     <!-- 3. Configure SystemJS -->
     <script>
     System.import('system-config.js')
       .then(function () {
-        System.import('scripts/main');
+        System.import('app');
       })
       .catch(console.error.bind(console));
     </script>

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -9,4 +9,7 @@ import {Component} from '@angular/core';
 
 export class AppComponent {
   public name: string = 'Angular';
+  constructor () {
+    console.log('AppComponent');
+  }
 }
