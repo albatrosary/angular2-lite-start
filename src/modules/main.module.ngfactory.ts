@@ -47,7 +47,6 @@ import * as import39 from '@angular/core/src/change_detection/differs/iterable_d
 import * as import40 from '@angular/core/src/change_detection/differs/keyvalue_differs';
 import * as import41 from '@angular/http/src/interfaces';
 import * as import42 from '@angular/http/src/http';
-import * as import43 from '@angular/core/src/i18n/tokens';
 class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   _CommonModule_0:import2.CommonModule;
   _ApplicationModule_1:import3.ApplicationModule;
@@ -87,12 +86,11 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   __XHRBackend_35:import23.XHRBackend;
   __RequestOptions_36:import24.BaseRequestOptions;
   __Http_37:any;
-  __TRANSLATIONS_FORMAT_38:any;
   constructor(parent:import25.Injector) {
     super(parent,[import26.AppComponentNgFactory],[import26.AppComponentNgFactory]);
   }
   get _LOCALE_ID_7():any {
-    if ((this.__LOCALE_ID_7 == (null as any))) { (this.__LOCALE_ID_7 = (null as any)); }
+    if ((this.__LOCALE_ID_7 == (null as any))) { (this.__LOCALE_ID_7 = 'en-US'); }
     return this.__LOCALE_ID_7;
   }
   get _NgLocalization_8():import8.NgLocaleLocalization {
@@ -204,10 +202,6 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((this.__Http_37 == (null as any))) { (this.__Http_37 = import7.httpFactory(this._XHRBackend_35,this._RequestOptions_36)); }
     return this.__Http_37;
   }
-  get _TRANSLATIONS_FORMAT_38():any {
-    if ((this.__TRANSLATIONS_FORMAT_38 == (null as any))) { (this.__TRANSLATIONS_FORMAT_38 = (null as any)); }
-    return this.__TRANSLATIONS_FORMAT_38;
-  }
   createInternal():import1.AppModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._ApplicationModule_1 = new import3.ApplicationModule();
@@ -261,7 +255,6 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import23.XHRBackend)) { return this._XHRBackend_35; }
     if ((token === import24.RequestOptions)) { return this._RequestOptions_36; }
     if ((token === import42.Http)) { return this._Http_37; }
-    if ((token === import43.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_38; }
     return notFoundResult;
   }
   destroyInternal():void {
