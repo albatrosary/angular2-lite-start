@@ -12,7 +12,7 @@ System.config({
   // map tells the System loader where to look for things
   map: {
     // our app is within the app folder
-    'app': 'scripts/main.js',
+    'app': 'scripts/main.aot.js',
     // angular bundles
     '@angular/core': 'npm:@angular/core',
     '@angular/common': 'npm:@angular/common',

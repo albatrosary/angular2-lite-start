@@ -29,9 +29,9 @@ class _View_AppComponent_Host0 extends import3.DebugAppView<any> {
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_AppComponent0(this.viewUtils,this.injector(0),this._appEl_0);
     this._AppComponent_0_4 = new import1.AppComponent();
-    this._appEl_0.initComponent(this._AppComponent_0_4,[],compView_0);
+    this._appEl_0.initComponent(this._AppComponent_0_4,([] as any[]),compView_0);
     compView_0.create(this._AppComponent_0_4,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -40,16 +40,16 @@ class _View_AppComponent_Host0 extends import3.DebugAppView<any> {
   }
 }
 function viewFactory_AppComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_AppComponent_Host === (null as any))) { (renderType_AppComponent_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,[],{})); }
+  if ((renderType_AppComponent_Host === (null as any))) { (renderType_AppComponent_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_AppComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const AppComponentNgFactory:import10.ComponentFactory<import1.AppComponent> = new import10.ComponentFactory<import1.AppComponent>('my-app',viewFactory_AppComponent_Host0,import1.AppComponent);
-const styles_AppComponent:any[] = [];
+const styles_AppComponent:any[] = ([] as any[]);
 const nodeDebugInfos_AppComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import0.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
 var renderType_AppComponent:import2.RenderComponentType = (null as any);
@@ -69,13 +69,13 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
     this._text_2 = this.renderer.createText(this._el_1,'',this.debug(2,1,8));
     this._text_3 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(3,1,42));
     this._expr_0 = import8.UNINITIALIZED;
-    this.init([],[
+    this.init(([] as any[]),[
       this._text_0,
       this._el_1,
       this._text_2,
       this._text_3
     ]
-    ,[],[]);
+    ,([] as any[]),([] as any[]));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -90,6 +90,6 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.AppComponent> {
-  if ((renderType_AppComponent === (null as any))) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/albatrosary/Sandbox/angular2-lite-start/src/components/home/home.ts class AppComponent - inline template',0,import9.ViewEncapsulation.None,styles_AppComponent,{})); }
+  if ((renderType_AppComponent === (null as any))) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/albatrosary/Hands-on/angular2-lite-start/src/components/home/home.ts class AppComponent - inline template',0,import9.ViewEncapsulation.None,styles_AppComponent,{})); }
   return new _View_AppComponent0(viewUtils,parentInjector,declarationEl);
 }
